@@ -72,7 +72,9 @@
         // Get values
         var name = getInputVal("name");
         var password = getInputVal("password");
-
+        
+        localStorage.clear();
+        
         if (login) {
           checkValidUser(name, password);
         } else {
